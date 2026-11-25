@@ -75,9 +75,30 @@
         }
         .member-grid{
             display: grid;
-            grid-template-columns: 120px 120px 120px;
-            gap:6px 12px;
+            grid-template-columns: 1fr 1fr;
+            gap:12px 48px;
             margin-top:8px;
+        }
+        .member{
+            display:flex;
+            align-items:baseline;
+            gap:10px;
+            flex-wrap:wrap;
+        }
+        .member .name{
+            min-width:72px;
+            font-weight:bold;
+        }
+        .member .email,
+        .editor-block .email{
+            color:#555;
+            font-size:15px;
+        }
+        @media (max-width:640px){
+            .member-grid{
+                grid-template-columns: 1fr;
+                gap:10px 0;
+            }
         }
     </style>
 </head>
@@ -103,23 +124,23 @@
         <h2>编辑委员会（排名不分先后）</h2>
 
         <div class="editor-block">
-            <span class="label">主　编：</span>邱利见
+            <span class="label">主　编：</span>邱利见　<span class="email">（qiulijianhao@outlook.com）</span>
         </div>
         <div class="editor-block">
-            <span class="label">副主编：</span>赵文政
+            <span class="label">副主编：</span>赵文政　<span class="email">（wenzhengzhk@126.com）</span>
         </div>
         <div class="editor-block">
             <span class="label">委　员：</span>
             <div class="member-grid">
-                <span>韩佳怡</span>
-                <span>文　欣</span>
-                <span>王艺凝</span>
-                <span>吴　硕</span>
-                <span>焦　娜</span>
-                <span>国丽娜</span>
-                <span>贺广宇</span>
-                <span>陈恺文</span>
-                <span>冯广宇</span>
+                <div class="member"><span class="name">韩佳怡</span><span class="email">（autumn1911@126.com）</span></div>
+                <div class="member"><span class="name">文　欣</span><span class="email">（786003065@qq.com）</span></div>
+                <div class="member"><span class="name">王艺凝</span><span class="email">（2483510816@qq.com）</span></div>
+                <div class="member"><span class="name">吴　硕</span><span class="email">（979934805@qq.com）</span></div>
+                <div class="member"><span class="name">焦　娜</span><span class="email">（Dunn_Jenkinstmi@mail.com）</span></div>
+                <div class="member"><span class="name">国丽娜</span><span class="email">（lvzq1976@126.com）</span></div>
+                <div class="member"><span class="name">贺广宇</span><span class="email">（fall1955@126.com）</span></div>
+                <div class="member"><span class="name">陈恺文</span><span class="email">（3948772437@qq.com）</span></div>
+                <div class="member"><span class="name">冯广宇</span><span class="email">（JohnsonLori4186@outlook.com）</span></div>
             </div>
         </div>
 
