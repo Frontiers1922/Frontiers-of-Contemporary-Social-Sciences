@@ -1,118 +1,220 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我们 - 当代社会科学前沿</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: "SimSun", "Microsoft Yahei", serif;
-        }
-        body {
-            background-color: #f7f9fc;
-            padding: 16px;
-        }
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e2e8f0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 18px 30px;
-            flex-wrap: wrap;
-            gap:12px;
-        }
-        .journal-title h1 {
-            font-size: 26px;
-            color: #165baa;
-            display: inline;
-        }
-        .journal-title .en-name {
-            font-size: 20px;
-            color: #165baa;
-            margin-left: 10px;
-        }
-        nav a {
-            margin:0 14px;
-            text-decoration: none;
-            color: #222;
-            font-size:17px;
-        }
-        nav a:hover{
-            color:#165baa;
-        }
-        .issn-box {
-            border:1px solid #165baa;
-            padding:8px 14px;
-            border-radius:4px;
-            color:#165baa;
-            font-size:15px;
-        }
-        .main-card {
-            max-width:1000px;
-            margin:24px auto;
-            background:#fff;
-            border-radius:10px;
-            padding:30px;
-            box-shadow: 0 1px 6px rgba(0,0,0,0.08);
-        }
-        h2{
-            color:#165baa;
-            margin-bottom:24px;
-        }
-        .contact-item{
-            font-size:16px;
-            line-height:2;
-            margin-bottom:8px;
-        }
-        .label-text{
-            display:inline-block;
-            width:140px;
-            font-weight:bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Frontiers of Contemporary Social Sciences | 联系我们 - 当代社会科学前沿</title>
+<meta name="description" content="Contact details of Frontiers of Contemporary Social Sciences (ISSN 3137-4026), published by POLARIS ACADEMIC LIMITED, Hong Kong. Submission email: ddshkxqy@126.com.">
+<link rel="canonical" href="https://frontiers1922.github.io/Frontiers-of-Contemporary-Social-Sciences/contact.html">
+<meta name="citation_journal_title" content="Frontiers of Contemporary Social Sciences">
+<meta name="citation_issn" content="3137-4026">
+<meta name="citation_publisher" content="POLARIS ACADEMIC LIMITED">
+<meta name="DC.title" content="Contact">
+<meta name="DC.language" content="en; zh">
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "SimSun", "Microsoft Yahei", serif;
+    }
+    body {
+        background-color: #f7f9fc;
+        padding: 16px;
+        color: #222;
+    }
+    header {
+        background: #ffffff;
+        border-bottom: 1px solid #e2e8f0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 30px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .journal-title h1 {
+        font-size: 26px;
+        color: #165baa;
+        display: inline;
+    }
+    .journal-title .en-name {
+        font-size: 19px;
+        color: #165baa;
+        margin-left: 10px;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #222;
+        font-size: 17px;
+    }
+    nav a:hover,
+    nav a.active {
+        color: #165baa;
+        font-weight: bold;
+        border-bottom: 2px solid #165baa;
+        padding-bottom: 2px;
+    }
+    .lang-switch {
+        display: flex;
+        border: 1px solid #165baa;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .lang-btn {
+        background: #fff;
+        border: none;
+        color: #165baa;
+        font-size: 14px;
+        padding: 5px 12px;
+        cursor: pointer;
+        font-family: "Microsoft Yahei", sans-serif;
+    }
+    .lang-btn.active {
+        background: #165baa;
+        color: #fff;
+    }
+    .issn-box {
+        border: 1px solid #165baa;
+        padding: 8px 14px;
+        border-radius: 4px;
+        color: #165baa;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .main-card {
+        max-width: 1000px;
+        margin: 24px auto;
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    }
+    h2 {
+        color: #165baa;
+        margin-bottom: 24px;
+    }
+    .contact-item {
+        font-size: 16px;
+        line-height: 2;
+        margin-bottom: 8px;
+    }
+    .label-text {
+        display: inline-block;
+        width: 140px;
+        font-weight: bold;
+    }
+    .contact-item a {
+        color: #165baa;
+        text-decoration: none;
+    }
+    .contact-item a:hover {
+        text-decoration: underline;
+    }
+    .mail-box {
+        margin-top: 22px;
+        background: #e8f2ff;
+        border-radius: 6px;
+        padding: 14px 18px;
+        font-size: 15.5px;
+        line-height: 1.9;
+        color: #165baa;
+    }
+    body.lang-en .zh { display: none; }
+    body.lang-zh .en { display: none; }
+    body.lang-en .label-text { width: 190px; }
+    body.lang-en .contact-item,
+    body.lang-en .mail-box {
+        font-family: Georgia, "Times New Roman", serif;
+    }
+    @media (max-width: 640px) {
+        .label-text { width: 100%; display: block; }
+        body.lang-en .label-text { width: 100%; }
+    }
+</style>
 </head>
-<body>
-    <header>
-        <div class="journal-title">
-            <h1>当代社会科学前沿</h1>
-            <span class="en-name">Frontiers of Contemporary Social Sciences</span>
-        </div>
-        <nav>
-            <a href="index.html">首页</a>
-            <a href="about.html">期刊介绍</a>
-            <a href="board.html">编委会</a>
-            <a href="guide.html">投稿指南</a>
-            <a href="contact.html">联系我们</a>
-        </nav>
-        <div class="issn-box">
-            ISSN : 3137-4026<br>
-            EISSN: 3137-4034
-        </div>
-    </header>
-    <div class="main-card">
-        <h2>联系我们</h2>
-        <div class="contact-item">
-            <span class="label-text">期刊名称：</span>当代社会科学前沿（FRONTIERS OF CONTEMPORARY SOCIAL SCIENCES）
-        </div>
-        <div class="contact-item">
-            <span class="label-text">出版单位：</span>北極星學術有限公司（POLARIS ACADEMIC LIMITED）
-        </div>
-        <div class="contact-item">
-            <span class="label-text">出版地：</span>中国香港
-        </div>
-        <div class="contact-item">
-            <span class="label-text">出版地址：</span>RM H11, 1/F, KAISER EST PHASE 2, NO. 51 MAN YUE ST HUNG HOM HONG KONG
-        </div>
-        <div class="contact-item">
-            <span class="label-text">出版周期：</span>半年刊
-        </div>
-        <div class="contact-item">
-            <span class="label-text">联系方式：</span><a href="mailto:ddshkxqy@126.com" style="color:#165baa">ddshkxqy@126.com</a>
-        </div>
+<body class="lang-en">
+<header>
+    <div class="journal-title">
+        <h1 class="en">Frontiers of Contemporary Social Sciences</h1>
+        <h1 class="zh">当代社会科学前沿</h1>
+        <span class="en-name en">当代社会科学前沿</span>
     </div>
+    <nav>
+        <a href="index.html"><span class="zh">首页</span><span class="en">Home</span></a>
+        <a href="about.html"><span class="zh">期刊介绍</span><span class="en">About</span></a>
+        <a href="board.html"><span class="zh">编委会</span><span class="en">Editorial Board</span></a>
+        <a href="guide.html"><span class="zh">投稿指南</span><span class="en">For Authors</span></a>
+        <a href="contact.html" class="active"><span class="zh">联系我们</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="issn-box">
+        ISSN : 3137-4026<br>
+        EISSN: 3137-4034
+    </div>
+    <div class="lang-switch">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">中文</button>
+    </div>
+</header>
+
+<div class="main-card">
+    <h2><span class="zh">联系我们</span><span class="en">Contact Us</span></h2>
+
+    <div class="contact-item">
+        <span class="label-text"><span class="zh">期刊名称：</span><span class="en">Journal Title:</span></span>
+        <span class="zh">当代社会科学前沿（Frontiers of Contemporary Social Sciences）</span><span class="en">Frontiers of Contemporary Social Sciences (FCS)</span>
+    </div>
+    <div class="contact-item">
+        <span class="label-text"><span class="zh">出版单位：</span><span class="en">Publisher:</span></span>
+        <span class="zh">北極星學術有限公司（POLARIS ACADEMIC LIMITED）</span><span class="en">POLARIS ACADEMIC LIMITED</span>
+    </div>
+    <div class="contact-item">
+        <span class="label-text"><span class="zh">出版地：</span><span class="en">Place of Publication:</span></span>
+        <span class="zh">中国香港</span><span class="en">Hong Kong, China</span>
+    </div>
+    <div class="contact-item">
+        <span class="label-text"><span class="zh">出版地址：</span><span class="en">Editorial Address:</span></span>
+        <span class="zh">香港红磡民裕街51号凯旋工商中心二期1楼H11室</span><span class="en">RM H11, 1/F, KAISER EST PHASE 2, NO. 51 MAN YUE ST, HUNG HOM, HONG KONG</span>
+    </div>
+    <div class="contact-item">
+        <span class="label-text"><span class="zh">出版周期：</span><span class="en">Frequency:</span></span>
+        <span class="zh">半年刊（每年两期）</span><span class="en">Semiannual (two issues per year)</span>
+    </div>
+    <div class="contact-item">
+        <span class="label-text"><span class="zh">联系方式：</span><span class="en">Email:</span></span>
+        <a href="mailto:ddshkxqy@126.com">ddshkxqy@126.com</a>
+    </div>
+
+    <div class="mail-box">
+        <span class="zh"><strong>投稿与咨询：</strong>稿件投递、审稿进度、版权协议等事宜，请统一发送至 ddshkxqy@126.com，我们通常在 3 个工作日内回复。</span><span class="en"><strong>Submissions and enquiries:</strong> Please send manuscripts, review enquiries and copyright matters to ddshkxqy@126.com. We normally reply within three working days.</span>
+    </div>
+</div>
+
+<script>
+function setLang(lang) {
+    document.body.className = 'lang-' + lang;
+    document.documentElement.lang = (lang === 'en') ? 'en' : 'zh-CN';
+    try { localStorage.setItem('fcs-lang', lang); } catch (e) {}
+    var btns = document.querySelectorAll('.lang-btn');
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].className = (btns[i].getAttribute('data-lang') === lang) ? 'lang-btn active' : 'lang-btn';
+    }
+}
+(function () {
+    var saved = null, param = null;
+    try { saved = localStorage.getItem('fcs-lang'); } catch (e) {}
+    var m = location.search.match(/[?&]lang=(zh|en)/);
+    if (m) { param = m[1]; }
+    setLang(param || saved || 'en');
+})();
+</script>
 </body>
 </html>
