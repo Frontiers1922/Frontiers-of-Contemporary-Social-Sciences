@@ -84,6 +84,69 @@
             color:#165baa;
             font-weight:bold;
         }
+        .download-box{
+            margin-top:10px;
+            border:1px solid #d6e4f5;
+            background:#fafcff;
+            border-radius:8px;
+            padding:18px 20px;
+        }
+        .download-box p{
+            color:#444;
+            margin-bottom:14px;
+        }
+        .dl-grid{
+            display:flex;
+            flex-wrap:wrap;
+            gap:14px;
+        }
+        .dl-card{
+            flex:1 1 260px;
+            display:flex;
+            align-items:center;
+            gap:14px;
+            padding:14px 18px;
+            background:#fff;
+            border:1px solid #cfe0f3;
+            border-radius:8px;
+            text-decoration:none;
+            color:#222;
+            transition:all .18s ease;
+        }
+        .dl-card:hover{
+            border-color:#165baa;
+            box-shadow:0 3px 10px rgba(22,91,170,0.12);
+            transform:translateY(-1px);
+        }
+        .dl-icon{
+            flex:none;
+            width:46px;
+            height:46px;
+            border-radius:6px;
+            background:#165baa;
+            color:#fff;
+            font-family:"Microsoft Yahei",sans-serif;
+            font-size:13px;
+            font-weight:bold;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            letter-spacing:.5px;
+        }
+        .dl-text strong{
+            display:block;
+            font-size:16px;
+            color:#165baa;
+            margin-bottom:3px;
+        }
+        .dl-text span{
+            font-size:14px;
+            color:#666;
+        }
+        @media (max-width:600px){
+            .download-box{padding:14px;}
+            .dl-card{flex:1 1 100%;}
+        }
     </style>
 </head>
 <body>
@@ -108,7 +171,7 @@
         <h2>投稿指南</h2>
         <p>为确保投稿流程顺畅并保障期刊学术质量，请所有作者投稿前仔细阅读并遵守以下指南。投稿邮箱：<strong>ddshkxqy@126.com</strong>。</p>
 
-        <div class="tip-free">重要提示：本刊为免费开放获取期刊，<strong>不收取版面费。</strong>。</div>
+        <div class="tip-free">重要提示：本刊为免费开放获取期刊，<strong>不收取任何版面费、稿件处理费，无任何投稿相关费用</strong>。</div>
 
         <h3>稿件范围与类型</h3>
         <ul>
@@ -143,6 +206,27 @@
 
         <h3>投稿方式</h3>
         <p>请将实名和匿名稿件Word文档、投稿信息（作者姓名、单位、职称、联系方式、基金项目等）发送至邮箱：<strong>ddshkxqy@126.com</strong>，邮件主题格式建议：投稿‑论文题目‑作者。</p>
+
+        <h3>投稿模板下载</h3>
+        <div class="download-box">
+           <div class="tip-free">重要提示：本刊编辑部人力有限，格式不符的稿件将被直接拒稿。请在投稿前务必严格对照本刊格式要求进行修改</strong>。</div>
+            <div class="dl-grid">
+                <a class="dl-card" href="投稿模板.docx" download="投稿模板.docx">
+                    <div class="dl-icon">DOC</div>
+                    <div class="dl-text">
+                        <strong>投稿模板下载</strong>
+                        <span>论文格式模板（.docx，含标题、摘要、正文与参考文献格式）</span>
+                    </div>
+                </a>
+                <a class="dl-card" href="版权协议.docx" download="版权协议.docx">
+                    <div class="dl-icon">DOC</div>
+                    <div class="dl-text">
+                        <strong>版权协议模板下载</strong>
+                        <span>著作权转让协议（.docx，需全体作者签署）</span>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
