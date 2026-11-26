@@ -1,128 +1,224 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>编委会 - 当代社会科学前沿</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: "SimSun", "Microsoft Yahei", serif;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editorial Board - Frontiers of Contemporary Social Sciences | 编委会 - 当代社会科学前沿</title>
+<meta name="description" content="Editorial board of Frontiers of Contemporary Social Sciences (ISSN 3137-4026): editor-in-chief, associate editor and editorial board members with contact emails.">
+<link rel="canonical" href="https://frontiers1922.github.io/Frontiers-of-Contemporary-Social-Sciences/board.html">
+<meta name="citation_journal_title" content="Frontiers of Contemporary Social Sciences">
+<meta name="citation_issn" content="3137-4026">
+<meta name="DC.title" content="Editorial Board">
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "SimSun", "Microsoft Yahei", serif;
+    }
+    body {
+        background-color: #f7f9fc;
+        padding: 16px;
+        color: #222;
+    }
+    header {
+        background: #ffffff;
+        border-bottom: 1px solid #e2e8f0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 30px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .journal-title h1 {
+        font-size: 26px;
+        color: #165baa;
+        display: inline;
+    }
+    .journal-title .en-name {
+        font-size: 19px;
+        color: #165baa;
+        margin-left: 10px;
+        font-family: Georgia, "Times New Roman", serif;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #222;
+        font-size: 17px;
+    }
+    nav a:hover,
+    nav a.active {
+        color: #165baa;
+        font-weight: bold;
+        border-bottom: 2px solid #165baa;
+        padding-bottom: 2px;
+    }
+    .lang-switch {
+        display: flex;
+        border: 1px solid #165baa;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .lang-btn {
+        background: #fff;
+        border: none;
+        color: #165baa;
+        font-size: 14px;
+        padding: 5px 12px;
+        cursor: pointer;
+        font-family: "Microsoft Yahei", sans-serif;
+    }
+    .lang-btn.active {
+        background: #165baa;
+        color: #fff;
+    }
+    .issn-box {
+        border: 1px solid #165baa;
+        padding: 8px 14px;
+        border-radius: 4px;
+        color: #165baa;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    .main-card {
+        max-width: 1000px;
+        margin: 24px auto;
+        background: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    }
+    h2 {
+        color: #165baa;
+        margin-bottom: 24px;
+    }
+    .editor-block {
+        margin-bottom: 18px;
+        font-size: 17px;
+        line-height: 2.2;
+    }
+    .label {
+        display: inline-block;
+        min-width: 96px;
+        font-weight: bold;
+    }
+    .member-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 48px;
+        margin-top: 8px;
+    }
+    .member {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .member .name {
+        min-width: 72px;
+        font-weight: bold;
+    }
+    .member .email,
+    .editor-block .email {
+        color: #555;
+        font-size: 15px;
+    }
+    body.lang-en .zh { display: none; }
+    body.lang-zh .en { display: none; }
+    body.lang-en .label { min-width: 150px; }
+    body.lang-en .member .name { min-width: 108px; }
+    body.lang-en .member,
+    body.lang-en .editor-block {
+        font-family: Georgia, "Times New Roman", serif;
+    }
+    @media (max-width: 640px) {
+        .member-grid {
+            grid-template-columns: 1fr;
+            gap: 10px 0;
         }
-        body {
-            background-color: #f7f9fc;
-            padding: 16px;
-        }
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e2e8f0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 18px 30px;
-            flex-wrap: wrap;
-            gap:12px;
-        }
-        .journal-title h1 {
-            font-size: 26px;
-            color: #165baa;
-            display: inline;
-        }
-        .journal-title .en-name {
-            font-size: 20px;
-            color: #165baa;
-            margin-left: 10px;
-        }
-        nav a {
-            margin:0 14px;
-            text-decoration: none;
-            color: #222;
-            font-size:17px;
-        }
-        nav a:hover{
-            color:#165baa;
-        }
-        .issn-box {
-            border:1px solid #165baa;
-            padding:8px 14px;
-            border-radius:4px;
-            color:#165baa;
-            font-size:15px;
-        }
-        .main-card {
-            max-width:1000px;
-            margin:24px auto;
-            background:#fff;
-            border-radius:10px;
-            padding:30px;
-            box-shadow: 0 1px 6px rgba(0,0,0,0.08);
-        }
-        h2{
-            color:#165baa;
-            margin-bottom:24px;
-        }
-        .editor-block{
-            margin-bottom:18px;
-            font-size:17px;
-            line-height:2.2;
-        }
-        .label{
-            display:inline-block;
-            width:80px;
-            font-weight:bold;
-        }
-        .member-grid{
-            display: grid;
-            grid-template-columns: 120px 120px 120px;
-            gap:6px 12px;
-            margin-top:8px;
-        }
-    </style>
+    }
+</style>
 </head>
-<body>
-    <header>
-        <div class="journal-title">
-            <h1>当代社会科学前沿</h1>
-            <span class="en-name">Frontiers of Contemporary Social Sciences</span>
-        </div>
-        <nav>
-            <a href="index.html">首页</a>
-            <a href="about.html">期刊介绍</a>
-            <a href="board.html">编委会</a>
-            <a href="guide.html">投稿指南</a>
-            <a href="contact.html">联系我们</a>
-        </nav>
-        <div class="issn-box">
-            ISSN : 3137-4026<br>
-            EISSN: 3137-4034
-        </div>
-    </header>
-    <div class="main-card">
-        <h2>编辑委员会（排名不分先后）</h2>
-
-        <div class="editor-block">
-            <span class="label">主　编：</span>邱利见
-        </div>
-        <div class="editor-block">
-            <span class="label">副主编：</span>赵文政
-        </div>
-        <div class="editor-block">
-            <span class="label">委　员：</span>
-            <div class="member-grid">
-                <span>田长云</span>
-                <span>陈祖珍</span>
-                <span>谭仕碧</span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
+<body class="lang-en">
+<header>
+    <div class="journal-title">
+        <h1 class="en">Frontiers of Contemporary Social Sciences</h1>
+        <h1 class="zh">当代社会科学前沿</h1>
+        <span class="en-name en">当代社会科学前沿</span>
     </div>
+    <nav>
+        <a href="index.html"><span class="zh">首页</span><span class="en">Home</span></a>
+        <a href="about.html"><span class="zh">期刊介绍</span><span class="en">About</span></a>
+        <a href="board.html" class="active"><span class="zh">编委会</span><span class="en">Editorial Board</span></a>
+        <a href="guide.html"><span class="zh">投稿指南</span><span class="en">For Authors</span></a>
+        <a href="contact.html"><span class="zh">联系我们</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="issn-box">
+        ISSN : 3137-4026<br>
+        EISSN: 3137-4034
+    </div>
+    <div class="lang-switch">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">中文</button>
+    </div>
+</header>
+
+<div class="main-card">
+    <h2><span class="zh">编辑委员会（排名不分先后）</span><span class="en">Editorial Board (in no particular order)</span></h2>
+
+    <div class="editor-block">
+        <span class="label"><span class="zh">主　编：</span><span class="en">Editor-in-Chief:</span></span>
+        <span class="zh">邱利见</span><span class="en">Lijian Qiu</span>
+        <span class="email zh">（qiulijianhao@outlook.com）</span>
+        <span class="email en">qiulijianhao@outlook.com</span>
+    </div>
+    <div class="editor-block">
+        <span class="label"><span class="zh">副主编：</span><span class="en">Associate Editor:</span></span>
+        <span class="zh">赵文政</span><span class="en">Wenzheng Zhao</span>
+        <span class="email zh">（wenzhengzhk@126.com）</span>
+        <span class="email en">wenzhengzhk@126.com</span>
+    </div>
+    <div class="editor-block">
+        <span class="label"><span class="zh">委　员：</span><span class="en">Board Members:</span></span>
+        <div class="member-grid">
+            <div class="member"><span class="name"><span class="zh">韩佳怡</span><span class="en">Jiayi Han</span></span><span class="email zh">（autumn1911@126.com）</span><span class="email en">autumn1911@126.com</span></div>
+            <div class="member"><span class="name"><span class="zh">文　欣</span><span class="en">Xin Wen</span></span><span class="email zh">（786003065@qq.com）</span><span class="email en">786003065@qq.com</span></div>
+            <div class="member"><span class="name"><span class="zh">王艺凝</span><span class="en">Yining Wang</span></span><span class="email zh">（2483510816@qq.com）</span><span class="email en">2483510816@qq.com</span></div>
+            <div class="member"><span class="name"><span class="zh">吴　硕</span><span class="en">Shuo Wu</span></span><span class="email zh">（979934805@qq.com）</span><span class="email en">979934805@qq.com</span></div>
+            <div class="member"><span class="name"><span class="zh">焦　娜</span><span class="en">Na Jiao</span></span><span class="email zh">（Dunn_Jenkinstmi@mail.com）</span><span class="email en">Dunn_Jenkinstmi@mail.com</span></div>
+            <div class="member"><span class="name"><span class="zh">国丽娜</span><span class="en">Lina Guo</span></span><span class="email zh">（lvzq1976@126.com）</span><span class="email en">lvzq1976@126.com</span></div>
+            <div class="member"><span class="name"><span class="zh">贺广宇</span><span class="en">Guangyu He</span></span><span class="email zh">（fall1955@126.com）</span><span class="email en">fall1955@126.com</span></div>
+            <div class="member"><span class="name"><span class="zh">陈恺文</span><span class="en">Kaiwen Chen</span></span><span class="email zh">（3948772437@qq.com）</span><span class="email en">3948772437@qq.com</span></div>
+            <div class="member"><span class="name"><span class="zh">冯广宇</span><span class="en">Guangyu Feng</span></span><span class="email zh">（JohnsonLori4186@outlook.com）</span><span class="email en">JohnsonLori4186@outlook.com</span></div>
+        </div>
+    </div>
+</div>
+
+<script>
+function setLang(lang) {
+    document.body.className = 'lang-' + lang;
+    document.documentElement.lang = (lang === 'en') ? 'en' : 'zh-CN';
+    try { localStorage.setItem('fcs-lang', lang); } catch (e) {}
+    var btns = document.querySelectorAll('.lang-btn');
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].className = (btns[i].getAttribute('data-lang') === lang) ? 'lang-btn active' : 'lang-btn';
+    }
+}
+(function () {
+    var saved = null, param = null;
+    try { saved = localStorage.getItem('fcs-lang'); } catch (e) {}
+    var m = location.search.match(/[?&]lang=(zh|en)/);
+    if (m) { param = m[1]; }
+    setLang(param || saved || 'en');
+})();
+</script>
 </body>
 </html>
