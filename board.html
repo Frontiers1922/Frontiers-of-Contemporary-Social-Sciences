@@ -112,8 +112,8 @@
     }
     .member-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 12px 48px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px 28px;
         margin-top: 8px;
     }
     .member {
@@ -129,12 +129,18 @@
     body.lang-en .zh { display: none; }
     body.lang-zh .en { display: none; }
     body.lang-en .label { min-width: 150px; }
-    body.lang-en .member .name { min-width: 108px; }
+    body.lang-en .member .name { min-width: 96px; }
     body.lang-en .member,
     body.lang-en .editor-block {
         font-family: Georgia, "Times New Roman", serif;
     }
-    @media (max-width: 640px) {
+    @media (max-width: 900px) {
+        .member-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px 24px;
+        }
+    }
+    @media (max-width: 560px) {
         .member-grid {
             grid-template-columns: 1fr;
             gap: 10px 0;
@@ -182,9 +188,6 @@
         <div class="member-grid">
             <div class="member"><span class="name"><span class="zh">蒋京员</span><span class="en">Jingyuan Jiang</span></span></div>
             <div class="member"><span class="name"><span class="zh">淦伟翔（Gabriel）</span><span class="en">Gabriel Gan</span></span></div>
-            <div class="member"><span class="name"><span class="zh">陈恺文</span><span class="en">Kaiwen Chen</span></span></div>
-            <div class="member"><span class="name"><span class="zh">国丽娜</span><span class="en">Lina Guo</span></span></div>
-            <div class="member"><span class="name"><span class="zh">焦　娜</span><span class="en">Na Jiao</span></span></div>
             <div class="member"><span class="name"><span class="zh">吴　硕</span><span class="en">Shuo Wu</span></span></div>
             <div class="member"><span class="name"><span class="zh">王艺凝</span><span class="en">Yining Wang</span></span></div>
             <div class="member"><span class="name"><span class="zh">文　欣</span><span class="en">Xin Wen</span></span></div>
